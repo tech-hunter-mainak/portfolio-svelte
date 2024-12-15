@@ -1,0 +1,19 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+:root {
+	--dark: var(#2e2e2e);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: rgb(77, 88, 100);
+}
