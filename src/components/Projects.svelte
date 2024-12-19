@@ -1,8 +1,9 @@
 <script>
+	import { goto } from '$app/navigation';
 	import projects from './projects';
 </script>
 
-<section class="mx-5 sm:mx-14 md:mx-20 lg:mx-32">
+<section id="projects" class="mx-5 sm:mx-14 md:mx-20 lg:mx-32">
 	<header
 		class="flex w-auto items-center justify-center bg-[rgba(42,42,42,0)] p-5 text-3xl font-semibold text-white backdrop-blur-sm"
 	>
@@ -13,12 +14,15 @@
 			<div
 				class="card group relative m-4 min-w-60 max-w-96 cursor-pointer overflow-hidden rounded-lg border-r-2 border-t-2 border-gray-900 bg-gradient-to-tl from-[#231f14] to-[#000000] text-gray-300 transition-transform hover:from-[#211c10] hover:to-[#272727] hover:brightness-90"
 			>
-				<div class="px-8 py-8 h-[calc(100%-2.5px)]">
+				<div class="h-[calc(100%-2.5px)] px-8 py-8">
 					<!-- Card Content -->
 					<div class="text-xl font-bold uppercase">{project.title}</div>
-					<div class="uppercase tracking-widest text-gray-300">{project.subtitle}</div>
+					<a href={project.subtitle} target="_blank"
+						><div class="uppercase tracking-widest text-gray-300">Link</div></a
+					>
 					<!-- Image Section -->
 					<img
+						loading="lazy"
 						src={project.image}
 						alt={project.title}
 						class="my-4 h-44 w-full rounded-md object-cover"

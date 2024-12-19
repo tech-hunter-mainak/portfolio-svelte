@@ -48,7 +48,7 @@
 	});
 </script>
 
-<section class="min-h-screen flex flex-col justify-center">
+<section class="flex min-h-screen flex-col justify-center">
 	<!-- Header Section -->
 	<header class="header" id="header">
 		<nav class="navbar container">
@@ -61,9 +61,9 @@
 			<div class="menu z-10" id="menu">
 				<ul class="menu-inner">
 					<li class="menu-item"><a href="#" class="menu-link">About</a></li>
-					<li class="menu-item"><a href="#" class="menu-link">Experiences</a></li>
-					<li class="menu-item"><a href="#" class="menu-link">Skills</a></li>
-					<li class="menu-item"><a href="#" class="menu-link">Projects</a></li>
+					<li class="menu-item"><a href="#experiences" class="menu-link">Experiences</a></li>
+					<li class="menu-item"><a href="#skills" class="menu-link">Skills</a></li>
+					<li class="menu-item"><a href="#projects" class="menu-link">Projects</a></li>
 				</ul>
 			</div>
 			<CustomButton />
@@ -74,6 +74,7 @@
 		<section class="section banner banner-section">
 			<div class="banner-column container">
 				<img
+					loading="lazy"
 					class="banner-image sepia-[0.6] transition-all hover:sepia-0 md:mb-32"
 					src={imaGE}
 					alt="banner"
@@ -111,7 +112,7 @@
 								odyssey of continuous learning. I'm sculpting a multidimensional skill set, weaving
 								my experiences into innovation and growth.
 							</p>
-							<p class="text-green-400">$ <span class="font-extrabold animate-ping">_</span></p>
+							<p class="text-green-400">$ <span class="animate-ping font-extrabold">_</span></p>
 						</div>
 					</aside>
 					<p class="font-mono"></p>

@@ -19,7 +19,6 @@
 			const leetcodeData = async () => {
 				const leetData = await fetch('https://leetcode-stats-api.herokuapp.com/mainak-2004');
 				data = await leetData.json();
-				console.log(data);
 				easy = data.easySolved;
 				medium = data.mediumSolved;
 				hard = data.hardSolved;
@@ -43,7 +42,7 @@
 		<div class="text-2xl font-extrabold text-gray-300">LeetCode Profile</div>
 		<div>Username : mainak-2004</div>
 	</div>
-	<div class="flex mt-5 flex-col-reverse lg:flex-row items-center">
+	<div class="mt-5 flex flex-col-reverse items-center lg:flex-row">
 		<div class="container w-full min-w-60">
 			<div class="skill-box">
 				<span class="title flex justify-between"
@@ -77,7 +76,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="m-6 w-full flex items-center justify-center overflow-hidden rounded-full">
+		<div class="m-6 flex w-full items-center justify-center overflow-hidden rounded-full">
 			<svg class="h-auto w-36 translate-x-1 translate-y-1 transform" aria-hidden="true">
 				<circle
 					class="text-gray-300"

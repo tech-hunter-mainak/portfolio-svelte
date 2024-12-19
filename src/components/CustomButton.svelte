@@ -5,9 +5,8 @@
 <button
 	class="button mt-5"
 	on:click={() => {
-		window.location.href = (
-			'https://www.linkedin.com/dms/prv/vid/v2/D5606AQHRzPG_2oo-LA/messaging-attachmentFile/messaging-attachmentFile/0/1734475770284?m=AQJqvMzhBxDcfQAAAZPXvNfITUzLObehelOQpBuEOgiUzDuM2JwiGhQ58w&ne=1&v=beta&t=wlogYLJiWIQBaR_AhWudBydqgGCAwarDf_PoxvzODe0&lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BXUX0EAoxQam08vI5UY%2BXaA%3D%3D'
-		);
+		window.location.href =
+			'https://www.linkedin.com/dms/prv/vid/v2/D5606AQHRzPG_2oo-LA/messaging-attachmentFile/messaging-attachmentFile/0/1734475770284?m=AQJqvMzhBxDcfQAAAZPXvNfITUzLObehelOQpBuEOgiUzDuM2JwiGhQ58w&ne=1&v=beta&t=wlogYLJiWIQBaR_AhWudBydqgGCAwarDf_PoxvzODe0&lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BXUX0EAoxQam08vI5UY%2BXaA%3D%3D';
 	}}
 >
 	<span class="button_lg">

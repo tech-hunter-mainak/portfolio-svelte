@@ -8,14 +8,15 @@
 	let skills1 = 0;
 </script>
 
-<section>
-	<header use:reveal
-		class="flex w-auto mt-10 items-center justify-center bg-[rgba(42,42,42,0)] p-5 text-3xl font-semibold text-white backdrop-blur-sm"
+<section id="skills">
+	<header
+		use:reveal
+		class="mt-10 flex w-auto items-center justify-center bg-[rgba(42,42,42,0)] p-5 text-3xl font-semibold text-white backdrop-blur-sm"
 	>
 		Skills
 	</header>
 
-	<div use:reveal class="sm:hidden mx-5">
+	<div use:reveal class="mx-5 sm:hidden">
 		<label for="tabs" class="sr-only">Select your country</label>
 		<select
 			id="tabs"
@@ -44,7 +45,7 @@
 		id="container"
 		class="m-5 flex flex-row gap-x-6 rounded-xl bg-[#ffffff11] backdrop-blur-lg sm:mx-14 md:mx-20 xl:mx-32"
 	>
-		<div class="radio-container m-5 hidden sm:flex ml-0 h-min flex-col justify-center">
+		<div class="radio-container m-5 ml-0 hidden h-min flex-col justify-center sm:flex">
 			<input
 				checked
 				id="radio-free"
@@ -123,7 +124,7 @@
 		width: max-content;
 		padding-left: 0.5rem;
 	}
-	
+
 	.radio-container input {
 		cursor: pointer;
 		appearance: none;

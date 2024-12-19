@@ -3,7 +3,8 @@
 	import { reveal } from 'svelte-reveal';
 </script>
 
-<header id="experiences"
+<header
+	id="experiences"
 	class="flex w-auto items-center justify-center bg-[rgba(42,42,42,0)] p-5 text-3xl font-semibold text-white backdrop-blur-sm"
 >
 	Experiences

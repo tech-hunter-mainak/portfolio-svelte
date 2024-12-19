@@ -1,26 +1,18 @@
 <script>
 	import Logo from '../portfoliologo.png';
+	import SendBtn from './SendBtn.svelte';
 	const socialLinks = [
-		{ name: 'Instagram', icon: 'fab fa-instagram', link: '#' },
-		{ name: 'LinkedIn', icon: 'fab fa-linkedin', link: '#' },
-		{ name: 'Facebook', icon: 'fab fa-facebook', link: '#' },
-		{ name: 'Behance', icon: 'fab fa-behance', link: '#' }
+		{ name: 'LinkedIn', icon: 'fab fa-linkedin', link: 'https://linkedin.com/in/mainakdasnits' },
+		{ name: 'Github', icon: 'fab fa-github', link: 'https://github.com/tech-hunter-mainak' },
+		{ name: 'Facebook', icon: 'fab fa-facebook', link: 'https://facebook.com/mainak.nitS' },
+		{ name: 'Instagram', icon: 'fab fa-instagram', link: 'https://instagram.com/mainak_das_personal' }
 	];
 
 	const navigationLinks = [
-		{ name: 'Home', link: '#' },
 		{ name: 'About', link: '#' },
-		{ name: 'Services', link: '#' },
-		{ name: 'Portfolio', link: '#' },
-		{ name: 'Testimonials', link: '#' },
-		{ name: 'Contact Us', link: '#' }
-	];
-
-	const servicesLinks = [
-		{ name: 'Designing & Branding', link: '#' },
-		{ name: 'Graphic Design', link: '#' },
-		{ name: 'Website Design', link: '#' },
-		{ name: 'Website Development', link: '#' }
+		{ name: 'Experiences', link: '#experiences' },
+		{ name: 'Skills', link: '#skills' },
+		{ name: 'Projects', link: '#projects' }
 	];
 
 	let email = '';
@@ -28,15 +20,16 @@
 
 	function submitForm() {
 		// Placeholder action for form submission, e.g., send data to a server or email service
-		window.location.href = `mailto:${email}`;
+		window.location.href = `mailto:mainakdas.dev@gmail.com?cc=${email}&subject=Stay%20in%20Touch&body=${query}`;
 		// Reset form
 		email = '';
 		query = '';
 	}
 </script>
 
-<footer id="footer"
-	class="bg-gradient-to-br from-[#3c311d] via-[#181404] to-[#0e0e0e] pt-24 text-white px-5 md:px-10"
+<footer
+	id="footer"
+	class="bg-gradient-to-br from-[#3c311d] via-[#181404] to-[#0e0e0e] px-5 pt-24 text-white md:px-10"
 >
 	<!-- Top Section: Introduction and Contact Info -->
 	<div
@@ -55,10 +48,10 @@
 		class="container mx-auto !mt-10 flex flex-col flex-wrap gap-8 px-6 py-12 md:flex-row md:justify-between"
 	>
 		<!-- Logo and Social Links -->
-		<div class="flex-1 flex flex-col items-center w-full">
-			<img src={Logo} alt="" class="mb-4 h-44 rounded-full w-44" />
+		<div class="flex w-full flex-1 flex-col items-center">
+			<img src={Logo} alt="" class="mb-4 h-44 w-44 rounded-full" loading="lazy" />
 			<h3 class="mb-2 text-3xl font-extrabold text-yellow-500">Mainak Das</h3>
-			<p class="mb-4 font-medium text-gray-400">Creative Designer</p>
+			<p class="mb-4 font-medium text-gray-400">Creative Developer</p>
 			<div class="flex gap-6">
 				{#each socialLinks as { name, icon, link }}
 					<a
@@ -75,13 +68,11 @@
 
 		<!-- Navigation Links -->
 		<div class="flex-1">
-			<h4 class="mb-4 inline-block pb-1 text-2xl font-extrabold">
-				Navigation
-			</h4>
+			<h4 class="mb-4 inline-block pb-1 text-2xl font-extrabold">Navigation</h4>
 			<ul class="text-md grid space-y-2 text-gray-400">
 				{#each navigationLinks as { name, link }}
 					<li>
-						<a href={link} class="transition duration-300 !hover:text-yellow-400">
+						<a href={link} class="!hover:text-yellow-400 transition duration-300">
 							{name}
 						</a>
 					</li>
@@ -101,7 +92,7 @@
 							bind:value={email}
 							placeholder="Your email"
 							required
-							class="mt-1 w-full rounded-lg border border-gray-500 bg-[#a582342a] p-3 text-white outline-none transition duration-300 focus:ring-2 focus:ring-orange-400"
+							class="mt-1 w-full rounded-lg border border-gray-500 bg-[#a582342a] p-3 text-white outline-none transition duration-300 focus:ring-2 focus:ring-yellow-400"
 						/>
 					</div>
 					<div>
@@ -111,16 +102,11 @@
 							bind:value={query}
 							placeholder="Write your message here..."
 							required
-							class="mt-1 w-full rounded-lg border border-gray-500 bg-[#a582342a] p-3 text-white outline-none transition duration-300 focus:ring-2 focus:ring-orange-400"
+							class="mt-1 w-full rounded-lg border border-gray-500 bg-[#a582342a] p-3 text-white outline-none transition duration-300 focus:ring-2 focus:ring-yellow-400"
 							rows="4"
 						></textarea>
 					</div>
-					<button
-						type="submit"
-						class="w-full rounded-lg bg-orange-500 py-2 text-lg font-semibold text-white transition duration-300 hover:bg-orange-600"
-					>
-						Send Message
-					</button>
+					<SendBtn />
 				</form>
 			</div>
 		</div>
