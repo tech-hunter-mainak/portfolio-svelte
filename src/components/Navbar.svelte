@@ -1,4 +1,4 @@
-<nav class="menu fixed bg-fixed ">
+<nav class="menu fixed bg-fixed">
 	<input type="checkbox" class="menu-open" name="menu-open" id="menu-open" />
 	<label class="menu-open-button" for="menu-open">
 		<span class="lines line-1"></span>

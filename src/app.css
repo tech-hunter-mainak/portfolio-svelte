@@ -1,6 +1,7 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+@import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css');
 
 :root {
 	--dark: var(#2e2e2e);
@@ -16,4 +17,17 @@
 
 body {
 	background-color: rgb(77, 88, 100);
+}
+
+body::-webkit-scrollbar {
+	width: 8px;
+	background-color: #606060;
+}
+body::-webkit-scrollbar-thumb {
+	background-color: #d2be58;
+	border-radius: 9999px;
+}
+body::-webkit-scrollbar-track {
+	width: 4px;
+	background-color: rgb(67, 67, 67);
 }

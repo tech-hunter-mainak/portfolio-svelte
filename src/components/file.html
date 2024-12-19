@@ -1,0 +1,564 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="shortcut icon" href="./imgs/portfoliologo.png" type="image/x-icon" />
+		<link rel="stylesheet" href="./css/style.css" type="text/css" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Raleway:200,100,400"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Mainak's Portfolio | Home</title>
+		<!-- <script src="index.js" defer></script> -->
+	</head>
+
+	<body>
+		<div id="header">
+			<div id="nav">
+				<div id="logo" style="display: flex; align-items: center">
+					<div id="navlogo" style="cursor: pointer" onclick="location.href = '#'"></div>
+				</div>
+				<div id="nav-links">
+					<div
+						id="close-btn"
+						onclick="document.getElementById('nav-links').style.transition = 'all 0.3s'; document.getElementById('nav-links').style.transform = 'translateX(0%)';"
+					>
+						X
+					</div>
+					<div
+						id="navlink1"
+						onclick="document.getElementById('banner').scrollIntoView({ behavior: 'smooth' });"
+					>
+						About
+					</div>
+					<div
+						id="navlink2"
+						onclick="document.getElementById('edu').scrollIntoView({ behavior: 'smooth' });"
+					>
+						Education
+					</div>
+					<div
+						id="navlink3"
+						onclick="document.getElementById('skills').scrollIntoView({ behavior: 'smooth' });"
+					>
+						Skills
+					</div>
+					<div
+						id="navlink4"
+						onclick="document.getElementById('exp').scrollIntoView({ behavior: 'smooth' });"
+					>
+						Experiences
+					</div>
+					<div
+						id="navlink4"
+						onclick="document.getElementById('prj').scrollIntoView({ behavior: 'smooth' });"
+					>
+						Projects
+					</div>
+					<div
+						id="navlink5"
+						onclick="document.getElementById('cert').scrollIntoView({ behavior: 'smooth' });"
+					>
+						Certificates
+					</div>
+				</div>
+				<div
+					id="nav-icons"
+					onclick="document.getElementById('nav-links').style.transition = 'all 0.3s'; document.getElementById('nav-links').style.transform = 'translateX(-100%)';"
+				></div>
+			</div>
+			<div id="banner">
+				<div id="banner-text">
+					<p id="pre-typed-data">Hi everyone,<br />This is Mainak Das</p>
+					<h2 id="text-typing">
+						I'm a
+						<span
+							id="typing-effect"
+							class="txt-rotate"
+							data-period="2000"
+							data-rotate='[ "MERN Developer", "Programmer", "ML Enthugiast" ]'
+						></span>
+					</h2>
+					<div id="abt-details">
+						Pursuing a B.Tech in Computer Science and Engineering at NIT Silchar, I'm on an odyssey
+						of continuous learning. I'm sculpting a multidimensional skill set, weaving my
+						experiences into innovation and growth.
+					</div>
+					<div id="banner-btn">
+						<div id="btn1" onclick="location.href = 'https://github.com/tech-hunter-mainak'">
+							Github
+						</div>
+						<div id="btn2" onclick="location.href = 'https://www.linkedin.com/in/mainakdasnits'">
+							LinkedIn
+						</div>
+						<div id="btn3" onclick="location.href = 'https://'">Check CV</div>
+					</div>
+				</div>
+				<div id="banner-img"></div>
+			</div>
+		</div>
+		<div id="voice-btn"></div>
+		<div id="notification">
+			<div id="ok-btn" onclick="document.getElementById('notification').style.display = 'none'">
+				Close
+			</div>
+			<div id="main-instruction">
+				Now you can control this webpage with your voice. <br /><strong>
+					To activate voice assitant just click the voice icon in the below-right corner.</strong
+				><br /><br />Eg:
+				<ul>
+					<li>Go to projects</li>
+					<li>Navigate to skills</li>
+					<li>Scroll down</li>
+					<li>Move up</li>
+					<li>Open linkedin</li>
+					<b>and anything you say...</b>
+				</ul>
+			</div>
+		</div>
+		<div id="main-content">
+			<div id="blur-effect"></div>
+			<div id="edu">
+				<header>Education</header>
+				<div id="parts">
+					<div id="part1">
+						<div id="card1">
+							<div id="card">
+								<div id="card-timeline">2023 - 2027 (Expected)</div>
+								<div id="card-top">
+									<div id="institute-logo1"></div>
+									<div id="institute-name">National Institute of Technology Silchar</div>
+								</div>
+								<div id="card-below">
+									<div id="department">Silchar, Assam</div>
+									<div id="department">B.Tech. in CSE</div>
+									<div id="grade">Grade : 8.13 CGPA (upto 2nd Sem)</div>
+									<div id="edu-skills">
+										<div id="edu-skills1">React</div>
+										<div id="edu-skills2">Node</div>
+										<div id="edu-skills3">Flask</div>
+										<div id="edu-skills4">Python</div>
+										<div id="edu-skills-more">and more</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="card2">
+							<div id="card">
+								<div id="card-timeline">2009 - 2022</div>
+								<div id="card-top">
+									<div id="institute-logo2"></div>
+									<div id="institute-name">
+										Govt. Sponsored Multi-purpose School (Boys')<br />
+										Taki House
+									</div>
+								</div>
+								<div id="card-below">
+									<div id="department">Kolkata, West Bengal</div>
+									<div id="department">12th Grade: 92.8%</div>
+									<div id="grade">10th Grade: 90%</div>
+									<div id="edu-skills">
+										<div id="edu-skills1">C</div>
+										<div id="edu-skills2">C++</div>
+										<div id="edu-skills3">HTML</div>
+										<div id="edu-skills4">SQL</div>
+										<div id="edu-skills-more">and more</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="part2">
+						<div id="line"></div>
+						<div id="dot"></div>
+						<div id="line"></div>
+						<div id="dot"></div>
+						<div id="line"></div>
+					</div>
+				</div>
+			</div>
+			<div id="skills">
+				<header>Skills</header>
+				<br />
+				<p>The skills that I have and have been working on</p>
+				<div id="cntnr-resize">
+					<div id="c1">
+						<h1>Frontend</h1>
+						<div id="childs">
+							<div id="ch1">HTML</div>
+							<div id="ch2">CSS</div>
+							<div id="ch3">JavaScript</div>
+							<div id="ch4">jQuery</div>
+							<div id="ch5">ReactJS</div>
+						</div>
+						<button id="btn-resize-hide">Show More >></button>
+					</div>
+					<div id="c2">
+						<h1>Backend</h1>
+						<div id="childs">
+							<div id="ch1">NodeJS</div>
+							<div id="ch2">ExpressJS</div>
+							<div id="ch3">MySQL</div>
+							<div id="ch4">PHP</div>
+						</div>
+						<button id="btn-resize-hide">Show More >></button>
+					</div>
+					<div id="c3">
+						<h1>Languages</h1>
+						<div id="childs">
+							<div id="ch1">C</div>
+							<div id="ch2">C++</div>
+							<div id="ch3">JavaScript</div>
+							<div id="ch4">PHP</div>
+							<div id="ch5">Python</div>
+						</div>
+						<button id="btn-resize-hide">Show More >></button>
+					</div>
+					<div id="c4">
+						<h1>Libraries and Modules</h1>
+						<div id="childs">
+							<div id="ch1">jQuery</div>
+							<div id="ch2">Flask</div>
+						</div>
+						<button id="btn-resize-hide">Show More >></button>
+					</div>
+				</div>
+			</div>
+			<div id="exp">
+				<header>Experiences</header>
+				<div id="exp-arrow">
+					<div id="exp-content">
+						<div id="exp-timeline">June 2024 - Present</div>
+						<div id="exp-top" style="margin-top: 10px">
+							<div id="exp-logo"></div>
+							<div id="exp-top-details">
+								<div id="exp-title">IEEE Summer Intern (IS3IP-2024)</div>
+								<div id="exp-role">Internship • Summer Intern</div>
+							</div>
+						</div>
+						<div id="exp-details">
+							<div id="exp-certificate">Certificate Coming Soon...</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="prj">
+				<header>Projects</header>
+				<div id="prjs">
+					<div id="prj-card1">
+						<div id="prj-timeline">June 2024 - Present</div>
+						<div id="prj-title">
+							<h2>LipSync | The AI Video Translator</h2>
+						</div>
+						<div id="prj-banner"></div>
+						<div id="prj-desc">
+							This is a React-based website with Python in the backend. The purpose of this project
+							is to translate educational videos into any other language with proper
+							lip-synchronization, to make a better understanding among the students. Currently
+							developing this project with my team, working in frontend and database connectivity,
+							and contributing to ML and deep-learning algorithms.
+						</div>
+						<div id="prj-btn" onclick="location.href = 'http://lipsync.in'">Website</div>
+					</div>
+					<div id="prj-card2">
+						<div id="prj-timeline">April 2024</div>
+						<div id="prj-title">
+							<h2>Weather Checker</h2>
+						</div>
+						<div id="prj-banner"></div>
+						<div id="prj-desc">
+							The purpose of this project is to develop a website that provides users with real-time
+							updates on the weather of the place where the user is currently with hourly forecasts.
+							This website can provide weather data for any global place. Also, users can search for
+							a place to check the weather and access the previously searched history.
+						</div>
+						<div
+							id="prj-btn"
+							onclick="location.href = 'https://tech-hunter-mainak.github.io/weather-app-onlyjs/home/'"
+						>
+							Website
+						</div>
+					</div>
+					<div id="prj-card3">
+						<div id="prj-timeline">April 2024</div>
+						<div id="prj-title">
+							<h2>Portfolio</h2>
+						</div>
+						<div id="prj-banner"></div>
+						<div id="prj-desc">
+							This portfolio gives real-time updates on my career, skills, and achievements. One can
+							navigate through the sections or do anything, using voice control.
+						</div>
+						<div
+							id="prj-btn"
+							onclick="location.href = 'https://github.com/tech-hunter-mainak/Portfolio'"
+						>
+							Git Repo
+						</div>
+					</div>
+					<div id="prj-card4">
+						<div id="prj-timeline">June 2024</div>
+						<div id="prj-title">
+							<h2>Video and audio to text converter</h2>
+						</div>
+						<div id="prj-banner"></div>
+						<div id="prj-desc">
+							This program takes the path (i.e. the link) of an audio or video file as input and
+							returns the audio as text format (speech-to-text converter) in the web interface.
+							Helpful for those who can’t hear.
+						</div>
+						<div
+							id="prj-btn"
+							onclick="location.href = 'https://github.com/tech-hunter-mainak/ai-empowered-tools'"
+						>
+							Git Repo
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="cert">
+				<header>Certifications</header>
+				<div id="cert-slider">
+					<div id="cert1"></div>
+					<div id="cert2"></div>
+					<div id="cert3"></div>
+					<div id="cert4"></div>
+					<div id="cert5"></div>
+					<div id="cert6"></div>
+					<div id="cert7"></div>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div id="foo-main">
+				<div id="foo-logo"></div>
+				<div id="divide"></div>
+				<div id="foo-details">
+					<div id="name">Mainak Das</div>
+					<div
+						id="mail-id"
+						style="margin-top: 10px"
+						onclick="location.href = 'mailto:mainak_ug_23@cse.nits.ac.in'"
+					>
+						mainak_ug_23@cse.nits.ac.in
+					</div>
+					<div id="loc">Current Location: Silchar, Assam</div>
+				</div>
+			</div>
+			<div id="foo-social">Copyright © 2024 | All rights reserved</div>
+		</div>
+	</body>
+	<script>
+		document.onscroll = () => {
+			const header = document.getElementById('header');
+			const nav = document.getElementById('nav');
+
+			if (window.innerWidth > 900) {
+				if (window.pageYOffset >= 230) {
+					header.style.display = 'flex';
+					header.style.justifyContent = 'center';
+
+					nav.style.position = 'fixed';
+					nav.style.borderRadius = '10px';
+					nav.style.backgroundColor = 'rgba(240, 255, 255, 0.128)';
+					nav.style.width = '80vw';
+					nav.style.backdropFilter = 'blur(10px)';
+					nav.style.marginTop = '10px';
+				} else if (window.pageYOffset <= 130) {
+					header.style.display = 'block';
+
+					nav.style.position = 'relative';
+					nav.style.borderRadius = '0px';
+					nav.style.backdropFilter = 'blur(0px)';
+					nav.style.backgroundColor = '';
+					nav.style.background = 'transparent';
+					nav.style.width = '100vw';
+					nav.style.marginTop = '0px';
+				}
+			}
+		};
+		var TxtRotate = function (el, toRotate, period) {
+			this.toRotate = toRotate;
+			this.el = el;
+			this.loopNum = 0;
+			this.period = parseInt(period, 10) || 2000;
+			this.txt = '';
+			this.tick();
+			this.isDeleting = false;
+		};
+
+		TxtRotate.prototype.tick = function () {
+			var i = this.loopNum % this.toRotate.length;
+			var fullTxt = this.toRotate[i];
+
+			if (this.isDeleting) {
+				this.txt = fullTxt.substring(0, this.txt.length - 1);
+			} else {
+				this.txt = fullTxt.substring(0, this.txt.length + 1);
+			}
+
+			this.el.innerHTML = '<span id="typing-effect" class="wrap">' + this.txt + '</span>';
+
+			var that = this;
+			var delta = 300 - Math.random() * 100;
+
+			if (this.isDeleting) {
+				delta /= 2;
+			}
+
+			if (!this.isDeleting && this.txt === fullTxt) {
+				delta = this.period;
+				this.isDeleting = true;
+			} else if (this.isDeleting && this.txt === '') {
+				this.isDeleting = false;
+				this.loopNum++;
+				delta = 500;
+			}
+
+			setTimeout(function () {
+				that.tick();
+			}, delta);
+		};
+
+		window.onload = function () {
+			var elements = document.getElementsByClassName('txt-rotate');
+			for (var i = 0; i < elements.length; i++) {
+				var toRotate = elements[i].getAttribute('data-rotate');
+				var period = elements[i].getAttribute('data-period');
+				if (toRotate) {
+					new TxtRotate(elements[i], JSON.parse(toRotate), period);
+				}
+			}
+			// INJECT CSS
+			var css = document.createElement('style');
+			css.type = 'text/css';
+			css.innerHTML = '.txt-rotate > .wrap { border-right: 0.08em solid #666 }';
+			document.body.appendChild(css);
+		};
+
+		// Check for browser support
+		if (!('webkitSpeechRecognition' in window)) {
+			alert('Web Speech API is not supported by this browser. Upgrade to Chrome or use Edge.');
+		} else {
+			// Initialize the SpeechRecognition object
+			const SpeechRecognition = window.webkitSpeechRecognition || window.SpeechRecognition;
+			const recognition = new SpeechRecognition();
+
+			// Configure the recognition object
+			recognition.continuous = true; // Keep listening until explicitly stopped
+			recognition.interimResults = false; // Do not provide interim results
+			recognition.lang = 'en-US'; // Language of recognition
+
+			// const startButton = document.getElementById('start');
+			// const stopButton = document.getElementById('stop');
+
+			// Start recognition
+			// startButton.addEventListener('click', () => {
+			//     recognition.start();
+			//     transcriptDiv.textContent = 'Listening...';
+			// });
+
+			// Stop recognition
+			// stopButton.addEventListener('click', () => {
+			//     recognition.stop();
+			// });
+
+			// Handle results
+			recognition.onresult = (event) => {
+				const transcript = event.results[event.resultIndex][0].transcript.toLowerCase().trim();
+				handleVoiceCommand(transcript);
+			};
+
+			// Handle errors
+			recognition.onerror = (event) => {
+				console.error('Speech recognition error:', event.error);
+			};
+
+			// Handle end of recognition
+			// recognition.onend = () => {
+			//     transcriptDiv.textContent = 'Transcript: ';
+			// };
+
+			// Handle voice commands
+
+			document.getElementById('voice-btn').onclick = function () {
+				var btn = document.getElementById('voice-btn');
+				var currentImage = btn.style.backgroundImage;
+
+				if (currentImage.includes('voice-off.png')) {
+					btn.style.backgroundImage = 'url("./imgs/voice-on.png")';
+					recognition.start();
+				} else {
+					btn.style.backgroundImage = 'url("./imgs/voice-off.png")';
+					recognition.stop();
+				}
+			};
+
+			const handleVoiceCommand = (command) => {
+				if (command.includes('about')) {
+					document.getElementById('banner').scrollIntoView({ behavior: 'smooth' });
+				} else if (command.includes('skills')) {
+					document.getElementById('skills').scrollIntoView({ behavior: 'smooth' });
+				} else if (command.includes('education')) {
+					document.getElementById('edu').scrollIntoView({ behavior: 'smooth' });
+				} else if (command.includes('experience')) {
+					document.getElementById('exp').scrollIntoView({ behavior: 'smooth' });
+				} else if (command.includes('certificates')) {
+					document.getElementById('cert').scrollIntoView({ behavior: 'smooth' });
+				} else if (command.includes('project')) {
+					document.getElementById('prj').scrollIntoView({ behavior: 'smooth' });
+				} else if (command.includes('project')) {
+					document.getElementById('prj').scrollIntoView({ behavior: 'smooth' });
+				} else if (command.includes('linkedin')) {
+					window.open('https://www.linkedin.com/in/mainakdasnits', '_blank');
+				} else if (command.includes('github')) {
+					window.open('https://github.com/tech-hunter-mainak', '_blank');
+				} else if (command.includes('scroll') && command.includes('right')) {
+					document.getElementById('cert-slider').scrollBy({
+						top: 0,
+						left: 200,
+						behavior: 'smooth'
+					});
+				} else if (command.includes('scroll') && command.includes('left')) {
+					document.getElementById('cert-slider').scrollBy({
+						top: 0,
+						left: -200,
+						behavior: 'smooth'
+					});
+				} else if (command.includes('scroll') && command.includes('down')) {
+					window.scrollBy({
+						top: 200,
+						left: 0,
+						behavior: 'smooth'
+					});
+				} else if (command.includes('down')) {
+					window.scrollBy({
+						top: 200,
+						left: 0,
+						behavior: 'smooth'
+					});
+				} else if (command.includes('scroll') && command.includes('up')) {
+					window.scrollBy({
+						top: -200,
+						left: 0,
+						behavior: 'smooth'
+					});
+				} else if (command.includes('up')) {
+					window.scrollBy({
+						top: -200,
+						left: 0,
+						behavior: 'smooth'
+					});
+				} else if (command.includes('stop')) {
+					var btn = document.getElementById('voice-btn');
+					btn.style.backgroundImage = 'url("./imgs/voice-off.png")';
+					recognition.stop();
+				} else {
+					console.error(`Transcript: ${command} (command not recognized)`);
+				}
+			};
+		}
+	</script>
+</html>

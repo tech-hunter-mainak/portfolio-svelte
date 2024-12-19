@@ -2,13 +2,9 @@
 	import { onMount } from 'svelte';
 
 	let container: HTMLDivElement;
-	let timeoutId: number; // Variable to hold the timeout ID
+	let timeoutId: any; // Variable to hold the timeout ID
 
 	const maxScroll = 400; // Maximum scroll effect
-
-    const handleClick = () => {
-        document.getElementById('experience')?.scrollIntoView();
-    }
 
 	const handleScroll = () => {
 		const scrollPosition = window.scrollY;
@@ -43,9 +39,12 @@
 </script>
 
 <div class="cube-container" bind:this={container}>
-	<!-- svelte-ignore a11y_click_events_have_key_events -->
-	<!-- svelte-ignore a11y_no_static_element_interactions -->
-	<div class="cube" on:click={handleClick}>
+	<div
+		class="cube"
+		on:click={() => {
+			document.getElementById('experiences')?.scrollIntoView({ behavior: 'smooth' });
+		}}
+	>
 		<div class="face front">Explore</div>
 		<div class="face back">Explore</div>
 		<div class="face right">Explore</div>
@@ -81,6 +80,8 @@
 		position: absolute;
 		width: 100px;
 		height: 100px;
+		color: rgba(0, 0, 0, 0.705);
+		font-weight: 600;
 		font-size: 18px;
 		text-align: center;
 		line-height: 100px;
@@ -111,25 +112,41 @@
 	.right {
 		transform: rotateY(90deg) translateZ(50px);
 		background-color: #e29e2a; /* Golden */
-		background-image: linear-gradient(160deg, #e29e2a 0%, #f9c042 100%); /* Golden to light golden */
+		background-image: linear-gradient(
+			160deg,
+			#e29e2a 0%,
+			#f9c042 100%
+		); /* Golden to light golden */
 	}
 
 	.left {
 		transform: rotateY(-90deg) translateZ(50px);
 		background-color: #e29e2a; /* Golden */
-		background-image: linear-gradient(160deg, #e29e2a 0%, #f9c042 100%); /* Golden to light golden */
+		background-image: linear-gradient(
+			160deg,
+			#e29e2a 0%,
+			#f9c042 100%
+		); /* Golden to light golden */
 	}
 
 	.top {
 		transform: rotateX(90deg) translateZ(50px);
 		background-color: #aa571c; /* Dark orange brown */
-		background-image: linear-gradient(160deg, #aa571c 0%, #9f4d24 100%); /* Dark orange brown gradient */
+		background-image: linear-gradient(
+			160deg,
+			#aa571c 0%,
+			#9f4d24 100%
+		); /* Dark orange brown gradient */
 	}
 
 	.bottom {
 		transform: rotateX(-90deg) translateZ(50px);
 		background-color: #aa571c; /* Dark orange brown */
-		background-image: linear-gradient(160deg, #aa571c 0%, #9f4d24 100%); /* Dark orange brown gradient */
+		background-image: linear-gradient(
+			160deg,
+			#aa571c 0%,
+			#9f4d24 100%
+		); /* Dark orange brown gradient */
 	}
 
 	@keyframes rotate {

@@ -1,92 +1,50 @@
-<section class="ml-20 mr-20">
+<script>
+	import projects from './projects';
+</script>
+
+<section class="mx-5 sm:mx-14 md:mx-20 lg:mx-32">
 	<header
 		class="flex w-auto items-center justify-center bg-[rgba(42,42,42,0)] p-5 text-3xl font-semibold text-white backdrop-blur-sm"
 	>
 		Projects
 	</header>
-	<div class="flex">
-		<div
-			class="card group relative m-4 w-[clamp(260px,80%,300px)] cursor-pointer overflow-hidden rounded-lg border-r-2 border-t-2 border-gray-900 bg-gradient-to-tl from-gray-900 to-gray-950 text-gray-300 transition-all hover:from-gray-800 hover:to-gray-950 hover:brightness-90"
-		>
-			<div class="px-8 py-10">
-				<div
-					class="mb-4 flex h-10 w-10 items-center justify-center rounded-full rounded-tl-none bg-orange-500 text-center font-bold text-gray-900 transition-all group-hover:-translate-y-1 group-hover:shadow-xl group-hover:shadow-red-900"
-				>
-					1
+	<div class="flex flex-wrap justify-between">
+		{#each projects as project}
+			<div
+				class="card group relative m-4 min-w-60 max-w-96 cursor-pointer overflow-hidden rounded-lg border-r-2 border-t-2 border-gray-900 bg-gradient-to-tl from-[#231f14] to-[#000000] text-gray-300 transition-transform hover:from-[#211c10] hover:to-[#272727] hover:brightness-90"
+			>
+				<div class="px-8 py-8 h-[calc(100%-2.5px)]">
+					<!-- Card Content -->
+					<div class="text-xl font-bold uppercase">{project.title}</div>
+					<div class="uppercase tracking-widest text-gray-300">{project.subtitle}</div>
+					<!-- Image Section -->
+					<img
+						src={project.image}
+						alt={project.title}
+						class="my-4 h-44 w-full rounded-md object-cover"
+					/>
+					<div class="mt-1 text-sm text-gray-400">{project.date}</div>
+					<div class="mt-8 text-gray-400">
+						<ul class="flex flex-wrap gap-1">
+							{#each project.tools as tool}
+								<span
+									class="rounded-md bg-[rgba(234,178,8,0.82)] px-1 py-0.5 text-xs font-bold text-black"
+									>{tool}</span
+								>
+							{/each}
+						</ul>
+						<p class="mt-4">{project.description}</p>
+					</div>
 				</div>
-				<div class="text-xl font-bold uppercase">Taskify- Task Tracker</div>
-				<div class="uppercase tracking-widest text-gray-300">NATURAL, OIL</div>
-				<div class="mt-8 text-gray-400">
-					<p class="font-bold">39.00 MLC</p>
-					<p>
-						Implemented a to-do list tracker website with an intuitive and visually appealing web
-						interface using Shadcn-UI. ◦ Integrated a backend system with Firebase Firestore for
-						real-time database management and seamless synchronization. ◦ Tools: Firebase, Vite,
-						React, Tailwind CSS, TypeScript, Express JS, Vercel
-					</p>
-				</div>
-			</div>
 
-			<div
-				class="absolute bottom-0 m-auto h-2 w-full rounded bg-gradient-to-l via-yellow-500 blur-2xl transition-all group-hover:blur-xl"
-			></div>
-			<div
-				class="m-auto h-0.5 w-[70%] rounded bg-gradient-to-l via-yellow-950 transition-all group-hover:w-full group-hover:via-yellow-500"
-			></div>
-		</div>
-		<div
-			class="card group relative m-4 w-[clamp(260px,80%,300px)] cursor-pointer overflow-hidden rounded-lg border-r-2 border-t-2 border-gray-900 bg-gradient-to-tl from-gray-900 to-gray-950 text-gray-300 transition-all hover:from-gray-800 hover:to-gray-950 hover:brightness-90"
-		>
-			<div class="px-8 py-10">
+				<!-- Hover Effects -->
 				<div
-					class="mb-4 h-10 w-10 rounded-full rounded-tl-none bg-orange-500 transition-all group-hover:-translate-y-1 group-hover:shadow-xl group-hover:shadow-red-900"
+					class="absolute bottom-0 m-auto h-2 w-full rounded bg-gradient-to-l via-yellow-500 blur-2xl transition-all group-hover:blur-xl"
 				></div>
-				<div class="text-xl font-bold uppercase">Taskify- Task Tracker</div>
-				<div class="uppercase tracking-widest text-gray-300">NATURAL, OIL</div>
-				<div class="mt-8 text-gray-400">
-					<p class="font-bold">39.00 MLC</p>
-					<p>
-						Implemented a to-do list tracker website with an intuitive and visually appealing web
-						interface using Shadcn-UI. ◦ Integrated a backend system with Firebase Firestore for
-						real-time database management and seamless synchronization. ◦ Tools: Firebase, Vite,
-						React, Tailwind CSS, TypeScript, Express JS, Vercel
-					</p>
-				</div>
-			</div>
-
-			<div
-				class="absolute bottom-0 m-auto h-2 w-full rounded bg-gradient-to-l via-yellow-500 blur-2xl transition-all group-hover:blur-xl"
-			></div>
-			<div
-				class="m-auto h-0.5 w-[70%] rounded bg-gradient-to-l via-yellow-950 transition-all group-hover:w-full group-hover:via-yellow-500"
-			></div>
-		</div>
-		<div
-			class="card group relative m-4 w-[clamp(260px,80%,300px)] cursor-pointer overflow-hidden rounded-lg border-r-2 border-t-2 border-gray-900 bg-gradient-to-tl from-gray-900 to-gray-950 text-gray-300 transition-all hover:from-gray-800 hover:to-gray-950 hover:brightness-90"
-		>
-			<div class="px-8 py-10">
 				<div
-					class="mb-4 h-10 w-10 rounded-full rounded-tl-none bg-orange-500 transition-all group-hover:-translate-y-1 group-hover:shadow-xl group-hover:shadow-red-900"
+					class="m-auto h-0.5 w-[70%] rounded bg-gradient-to-l via-yellow-950 transition-all group-hover:w-full group-hover:via-yellow-500"
 				></div>
-				<div class="text-xl font-bold uppercase">Taskify- Task Tracker</div>
-				<div class="uppercase tracking-widest text-gray-300">NATURAL, OIL</div>
-				<div class="mt-8 text-gray-400">
-					<p class="font-bold">39.00 MLC</p>
-					<p>
-						Implemented a to-do list tracker website with an intuitive and visually appealing web
-						interface using Shadcn-UI. ◦ Integrated a backend system with Firebase Firestore for
-						real-time database management and seamless synchronization. ◦ Tools: Firebase, Vite,
-						React, Tailwind CSS, TypeScript, Express JS, Vercel
-					</p>
-				</div>
 			</div>
-
-			<div
-				class="absolute bottom-0 m-auto h-2 w-full rounded bg-gradient-to-l via-yellow-500 blur-2xl transition-all group-hover:blur-xl"
-			></div>
-			<div
-				class="m-auto h-0.5 w-[70%] rounded bg-gradient-to-l via-yellow-950 transition-all group-hover:w-full group-hover:via-yellow-500"
-			></div>
-		</div>
+		{/each}
 	</div>
 </section>
