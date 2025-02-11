@@ -123,7 +123,7 @@
 		<!-- Contact Form -->
 	</div>
 	<div class="w-full py-3 text-center text-gray-400 lg:w-full lg:text-center">
-		<p class="text-sm">Copyright © 2024 | All Rights Reserved.</p>
+		<p class="text-sm">Copyright © 2025 | All Rights Reserved.</p>
 		<p class="mt-2 text-sm">India</p>
 	</div>
 </footer>

@@ -37,5 +37,11 @@ export const timelineData = [
 	{
 		isPeriod: 'true',
 		title: '2025'
+	},
+	{
+		date: 'Jan, 2025',
+		title: 'Neurathon, Organizing Team',
+		description:
+			'Engineered the Neurathon website, driving 500+ user engagement across India and ensuring a seamless user experience. Coordinated with 3 web developers to execute responsive front-end designs and seamless backend using Svelte.'
 	}
 ];
