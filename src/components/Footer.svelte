@@ -5,7 +5,11 @@
 		{ name: 'LinkedIn', icon: 'fab fa-linkedin', link: 'https://linkedin.com/in/mainakdasnits' },
 		{ name: 'Github', icon: 'fab fa-github', link: 'https://github.com/tech-hunter-mainak' },
 		{ name: 'Facebook', icon: 'fab fa-facebook', link: 'https://facebook.com/mainak.nitS' },
-		{ name: 'Instagram', icon: 'fab fa-instagram', link: 'https://instagram.com/mainak_das_personal' }
+		{
+			name: 'Instagram',
+			icon: 'fab fa-instagram',
+			link: 'https://instagram.com/mainak_das_personal'
+		}
 	];
 
 	const navigationLinks = [
