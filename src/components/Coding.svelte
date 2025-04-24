@@ -14,6 +14,11 @@
 		/>
 		<img
 			class="h-10 w-auto rounded-lg"
+			src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white"
+			alt="Java"
+		/>
+		<img
+			class="h-10 w-auto rounded-lg"
 			src="https://img.shields.io/badge/JS-AC8A00?style=for-the-badge&logo=javascript&logoColor=white"
 			alt=""
 		/>

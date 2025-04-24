@@ -75,13 +75,13 @@
 			<div class="banner-column container">
 				<img
 					loading="lazy"
-					class="banner-image sepia-[0.6] transition-all hover:sepia-0 md:mb-32"
+					class="banner-image !-mt-10 mb-10 rounded-md bg-cover bg-bottom bg-no-repeat transition-all hover:sepia-0 md:mb-32"
 					src={imaGE}
 					alt="banner"
-					style="height: 400px; clip-path: polygon(0 0, 0 14%, 0 70%, 31% 100%, 87% 100%, 100% 100%, 100% 34%, 65% 0);"
+					style="height: 300px; width: 300px;"
 				/>
 				<div class="banner-inner">
-					<h1 class="heading-xl font-bold" style="color: rgb(124, 124, 124);">
+					<h1 class="heading-lg font-bold" style="color: rgb(124, 124, 124);">
 						Hey there, its MAINAK
 					</h1>
 					<div class="card">
@@ -124,12 +124,26 @@
 					<a
 						href="https://linkedin.com/in/mainakdasnits/"
 						target="_blank"
-						title="LinkedIn | Mainak Das"><i class="fab fa-linkedin"></i></a
+						title="LinkedIn | Mainak Das"
+						aria-label="LinkedIn Profile of Mainak Das"><i class="fab fa-linkedin"></i></a
 					>
-					<a href="https://facebook.com/mainak.nitS" title=""><i class="fab fa-facebook"></i></a>
-					<a href="#" title=""><i class="fab fa-instagram"></i></a>
-					<a href="https://github.com/tech-hunter-mainak/" target="_blank" title="Github"
-						><i class="fab fa-github"></i></a
+					<a
+						href="https://facebook.com/mainak.nitS"
+						title="Facebook | Mainak Das"
+						aria-label="Facebook Profile of Mainak Das"
+						target="_blank"><i class="fab fa-facebook"></i></a
+					>
+					<a
+						href="https://https://www.instagram.com/mainak_das_personal/"
+						target="_blank"
+						title="Instagram | Mainak Das"
+						aria-label="Instagram Profile of Mainak Das"><i class="fab fa-instagram"></i></a
+					>
+					<a
+						href="https://github.com/tech-hunter-mainak/"
+						target="_blank"
+						title="Github | Mainak Das"
+						aria-label="GitHub Profile of Mainak Das"><i class="fab fa-github"></i></a
 					>
 				</div>
 			</div>

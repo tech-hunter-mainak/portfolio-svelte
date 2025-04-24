@@ -2,7 +2,17 @@ import taskify from '../taskify.png';
 import arduino from '../arduino.jpg';
 import movieapp from '../movieapp.png';
 import weather from '../weatherapp.png';
+import qilodb from '../qilodb_web_img.png';
 const projects = [
+	{
+		title: 'QiloDB - A Custom DBMS',
+		subtitle: 'https://qilodb.vercel.app/',
+		date: 'Jan 2025 - Apr 2025',
+		tools: ['C++', 'DBMS', 'Vercel', 'React', 'Tailwind CSS', 'TypeScript'],
+		description:
+			'Architected a SQL-like database system in C++, implemented efficient data structures, object-oriented approaches, indexing, and optimized query processing, ensured multi-platform support; supported 10000+ records in testing.',
+		image: qilodb
+	},
 	{
 		title: 'Taskify - Task Tracker',
 		subtitle: 'https://todolistwebapplive.vercel.app/',

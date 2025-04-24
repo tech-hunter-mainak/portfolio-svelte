@@ -1,5 +1,5 @@
 import prettier from 'eslint-config-prettier';
-import js from '@eslint/js';
+import js from 'eslint-config-js';
 import { includeIgnoreFile } from '@eslint/compat';
 import svelte from 'eslint-plugin-svelte';
 import globals from 'globals';

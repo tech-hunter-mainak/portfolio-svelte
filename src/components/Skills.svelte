@@ -22,7 +22,7 @@
 			id="tabs"
 			class="block w-full rounded-lg border border-gray-300 bg-[#000] p-2.5 text-sm text-[#85858517] focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
 			on:change={(e) => {
-				const selectedIndex = e.target.selectedIndex;
+				const selectedIndex = (e.target as HTMLSelectElement)?.selectedIndex ?? 0;
 				if (selectedIndex === 0) {
 					skills1 = 0;
 				} else if (selectedIndex === 1) {
