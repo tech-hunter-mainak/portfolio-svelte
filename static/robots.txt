@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+Disallow: /cgi-bin/
+Sitemap: https://mainak-das-portfolio.netlify.app/sitemap.xml

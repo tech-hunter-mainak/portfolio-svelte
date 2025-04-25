@@ -1,5 +1,4 @@
 <script>
-	import { goto } from '$app/navigation';
 	import projects from './projects';
 </script>
 
@@ -31,10 +30,11 @@
 					<div class="mt-8 text-gray-400">
 						<ul class="flex flex-wrap gap-1">
 							{#each project.tools as tool}
-								<span
+								<li
 									class="rounded-md bg-[rgba(234,178,8,0.82)] px-1 py-0.5 text-xs font-bold text-black"
-									>{tool}</span
 								>
+									{tool}
+								</li>
 							{/each}
 						</ul>
 						<p class="mt-4">{project.description}</p>

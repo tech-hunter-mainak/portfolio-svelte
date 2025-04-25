@@ -29,6 +29,9 @@ importers:
       flowbite-svelte:
         specifier: ^0.47.4
         version: 0.47.4(rollup@4.28.1)(svelte@5.10.0)
+      scrollmagic:
+        specifier: ^2.0.8
+        version: 2.0.8
       scrollreveal:
         specifier: ^4.0.9
         version: 4.0.9
@@ -54,6 +57,9 @@ importers:
       '@types/node':
         specifier: ^22.10.2
         version: 22.10.2
+      '@types/scrollmagic':
+        specifier: ^2.0.8
+        version: 2.0.8
       autoprefixer:
         specifier: ^10.4.20
         version: 10.4.20(postcss@8.4.49)
@@ -63,6 +69,9 @@ importers:
       eslint:
         specifier: ^9.7.0
         version: 9.16.0(jiti@1.21.6)
+      eslint-config-js:
+        specifier: ^5.0.0
+        version: 5.0.0
       eslint-config-prettier:
         specifier: ^9.1.0
         version: 9.1.0(eslint@9.16.0(jiti@1.21.6))
@@ -566,6 +575,9 @@ packages:
   '@types/resolve@1.20.2':
     resolution: {integrity: sha512-60BCwRFOZCQhDncwQdxxeOEEkbc5dIMccYLwbxsS4TUNeVECQ/pBJ0j09mrHOl/JJvpRPGwO9SvE4nR2Nb/a4Q==}
 
+  '@types/scrollmagic@2.0.8':
+    resolution: {integrity: sha512-hbWfZlV2v5XaPCGdVXPVReNdtzO81C0Lfpip0scC/iDec3VNMtmQsvYMsZfIEPRC5b5+M2leJIarxlVUgviCNQ==}
+
   '@typescript-eslint/eslint-plugin@8.18.0':
     resolution: {integrity: sha512-NR2yS7qUqCL7AIxdJUQf2MKKNDVNaig/dEB0GBLU7D+ZdHgK1NoH/3wsgO3OnPVipn51tG3MAwaODEGil70WEw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
@@ -893,6 +905,9 @@ packages:
     engines: {node: '>=12'}
     peerDependencies:
       eslint: '>=6.0.0'
+
+  eslint-config-js@5.0.0:
+    resolution: {integrity: sha512-qEtbdEmC7xZgvHlx8z1q8/PzqdjMF0yRq5t+wovyXFPawDY5XqJ4zniteVjOE/2SNA9DLEsZY2TzUwWbUhbaXQ==}
 
   eslint-config-prettier@9.1.0:
     resolution: {integrity: sha512-NSWl5BFQWEPi1j4TjVNItzYV7dZXZ+wP6I6ZhrBGpChQhZRUaElihE9uRRkcbRnNb76UMKDF3r+WTmNcGPKsqw==}
@@ -1812,6 +1827,10 @@ packages:
     engines: {node: '>=16.0.0'}
     hasBin: true
 
+  scrollmagic@2.0.8:
+    resolution: {integrity: sha512-UYXEGBPVLziovXl3FjHGkY9c4UXKUKopIdXwWR2JapWxCo0U345wYegi7rcsv5vHf/ktc1bSNWy4QRFiV+Yccw==}
+    engines: {node: '>=0.10.x'}
+
   scrollreveal@4.0.9:
     resolution: {integrity: sha512-fefGvzVS8YbXbDK1+T0kvy2yqxaiBJZeGUhPeqajf+7sGqtX4xikbKGAlzQuPCpswAMswx94ZwhDjXKnRIqW1w==}
 
@@ -2471,6 +2490,8 @@ snapshots:
 
   '@types/resolve@1.20.2': {}
 
+  '@types/scrollmagic@2.0.8': {}
+
   '@typescript-eslint/eslint-plugin@8.18.0(@typescript-eslint/parser@8.18.0(eslint@9.16.0(jiti@1.21.6))(typescript@5.7.2))(eslint@9.16.0(jiti@1.21.6))(typescript@5.7.2)':
     dependencies:
       '@eslint-community/regexpp': 4.12.1
@@ -2852,6 +2873,8 @@ snapshots:
     dependencies:
       eslint: 9.16.0(jiti@1.21.6)
       semver: 7.6.3
+
+  eslint-config-js@5.0.0: {}
 
   eslint-config-prettier@9.1.0(eslint@9.16.0(jiti@1.21.6)):
     dependencies:
@@ -3659,6 +3682,8 @@ snapshots:
       sass-embedded-win32-arm64: 1.83.0
       sass-embedded-win32-ia32: 1.83.0
       sass-embedded-win32-x64: 1.83.0
+
+  scrollmagic@2.0.8: {}
 
   scrollreveal@4.0.9:
     dependencies:

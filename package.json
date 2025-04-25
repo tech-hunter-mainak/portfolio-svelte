@@ -18,9 +18,11 @@
 		"@sveltejs/kit": "^2.9.0",
 		"@sveltejs/vite-plugin-svelte": "^5.0.0",
 		"@types/node": "^22.10.2",
+		"@types/scrollmagic": "^2.0.8",
 		"autoprefixer": "^10.4.20",
 		"cssnano": "^7.0.6",
 		"eslint": "^9.7.0",
+		"eslint-config-js": "^5.0.0",
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-plugin-svelte": "^2.36.0",
 		"globals": "^15.0.0",
@@ -44,6 +46,7 @@
 		"@tailwindcss/typography": "^0.5.15",
 		"flowbite": "^2.5.2",
 		"flowbite-svelte": "^0.47.4",
+		"scrollmagic": "^2.0.8",
 		"scrollreveal": "^4.0.9",
 		"tailwind-merge": "^2.5.5"
 	}

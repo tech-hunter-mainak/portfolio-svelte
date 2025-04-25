@@ -115,14 +115,6 @@
 <!-- cd-timeline -->
 
 <style>
-	html,
-	body {
-		background-color: #222c32;
-		height: 100%;
-		font-family: 'Open Sans', sans-serif;
-		box-sizing: border-box;
-	}
-
 	.cd-container {
 		width: 90%;
 		max-width: 1080px;

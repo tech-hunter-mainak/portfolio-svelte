@@ -1,7 +1,7 @@
 <script>
 	import { onMount } from 'svelte';
 	import '../Hero.scss';
-	import imaGE from '../mainak.jpg';
+	import imaGE from '../mainak.webp';
 	import Cube from './Cube.svelte';
 	import CustomButton from './CustomButton.svelte';
 	onMount(() => {
@@ -75,10 +75,9 @@
 			<div class="banner-column container">
 				<img
 					loading="lazy"
-					class="banner-image !-mt-10 mb-10 rounded-md bg-cover bg-bottom bg-no-repeat transition-all hover:sepia-0 md:mb-32"
+					class="banner-image mb-10 !w-56 rounded-md bg-cover bg-bottom bg-no-repeat transition-all hover:sepia-0 md:mb-32 md:!h-96 md:!w-80 lg:!-mt-10"
 					src={imaGE}
 					alt="banner"
-					style="height: 300px; width: 300px;"
 				/>
 				<div class="banner-inner">
 					<h1 class="heading-lg font-bold" style="color: rgb(124, 124, 124);">

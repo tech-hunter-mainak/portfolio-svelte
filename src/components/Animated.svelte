@@ -1,12 +1,11 @@
 <script>
-	// init controller
 	// @ts-ignore
+	import ScrollMagic from 'scrollmagic';
 	var controller = new ScrollMagic.Controller();
 	// build scenes
 	var revealElements = document.getElementsByClassName('digit');
 	for (var i = 0; i < revealElements.length; i++) {
 		// create a scene for each element
-		// @ts-ignore
 		new ScrollMagic.Scene({
 			triggerElement: revealElements[i], // y value not modified, so we can use element as trigger as well
 			offset: 50, // start a little later
@@ -22,7 +21,7 @@
 <div class="spacer s0"></div>
 <div class="box2 white">
 	<p>Multiple elements can be looped over and animated as they enter the viewport.</p>
-	<a href="#" class="viewsource">view source</a>
+	<a href="/" class="viewsource">view source</a>
 </div>
 <div class="spacer s0"></div>
 <div id="reveal-elements">

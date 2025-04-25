@@ -1,4 +1,4 @@
-let data = {};
+const data = {};
 const leetcodeData = async () => {
 	const leetData = await fetch('https://leetcode-stats-api.herokuapp.com/mainak-2004');
 	const data = await leetData.json();

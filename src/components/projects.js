@@ -2,7 +2,7 @@ import taskify from '../taskify.png';
 import arduino from '../arduino.jpg';
 import movieapp from '../movieapp.png';
 import weather from '../weatherapp.png';
-import qilodb from '../qilodb_web_img.png';
+import qilodb from '../qilodb_web_img.webp';
 const projects = [
 	{
 		title: 'QiloDB - A Custom DBMS',
