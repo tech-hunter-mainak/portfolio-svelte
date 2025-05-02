@@ -74,7 +74,6 @@
 		<section class="section banner banner-section">
 			<div class="banner-column container">
 				<img
-					loading="lazy"
 					class="banner-image mb-10 !w-56 rounded-md bg-cover bg-bottom bg-no-repeat transition-all hover:sepia-0 md:mb-32 md:!h-96 md:!w-80 lg:!-mt-10"
 					src={imaGE}
 					alt="banner"
