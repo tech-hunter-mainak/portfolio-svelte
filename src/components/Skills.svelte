@@ -91,7 +91,7 @@
 			{#if skills1 % 4 == 0}
 				<div>
 					<Coding />
-					<!-- <LeetCode /> -->
+					<LeetCode />
 				</div>
 			{:else if skills1 % 4 == 1}
 				<Frameworks />
