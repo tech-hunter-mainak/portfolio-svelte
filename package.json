@@ -46,6 +46,7 @@
 		"@tailwindcss/typography": "^0.5.15",
 		"flowbite": "^2.5.2",
 		"flowbite-svelte": "^0.47.4",
+		"leetcode-query": "^2.0.0",
 		"scrollmagic": "^2.0.8",
 		"scrollreveal": "^4.0.9",
 		"tailwind-merge": "^2.5.5"
