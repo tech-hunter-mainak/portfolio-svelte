@@ -20,7 +20,7 @@
 		<label for="tabs" class="sr-only">Select your country</label>
 		<select
 			id="tabs"
-			class="block w-full rounded-lg border border-gray-300 bg-neutral-300 text-black p-2.5 text-sm text-[#85858517] focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
+			class="block w-full rounded-lg border border-gray-300 bg-neutral-300 p-2.5 text-sm text-[#85858517] text-black focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
 			on:change={(e) => {
 				const selectedIndex = (e.target as HTMLSelectElement)?.selectedIndex ?? 0;
 				if (selectedIndex === 0) {
@@ -91,7 +91,24 @@
 			{#if skills1 % 4 == 0}
 				<div>
 					<Coding />
-					<LeetCode />
+					<div class="lg:hidden">
+						<a
+							href="https://leetcode.com/u/mainak-2004"
+							target="_blank"
+							rel="noopener noreferrer"
+							aria-label="LeetCode Profile of Mainak Das"
+							title="LeetCode Profile of Mainak Das"
+						>
+							<LeetCode /></a
+						>
+					</div>
+					<a href="https://leetcode.com/u/mainak-2004" target="_blank"
+						><img
+							class="hidden p-4 lg:block"
+							src="https://leetcard.jacoblin.cool/mainak-2004?border=0&radius=20&width=700&ext=contest&ext=heatmap&height=350"
+							alt="LeetCode Stats"
+						/></a
+					>
 				</div>
 			{:else if skills1 % 4 == 1}
 				<Frameworks />
